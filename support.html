@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - BLE Insight</title>
+    <style>
+        :root {
+            --bg: #0f0f1a;
+            --card: #1a1a2e;
+            --accent: #007AFF;
+            --text: #e0e0e0;
+            --muted: #8888aa;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container { max-width: 640px; margin: 0 auto; padding: 48px 24px; }
+        .back { color: var(--accent); text-decoration: none; font-size: 14px; display: inline-block; margin-bottom: 24px; }
+        h1 { font-size: 24px; margin-bottom: 4px; }
+        .tagline { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+        h2 { font-size: 18px; margin-top: 28px; margin-bottom: 8px; color: #fff; }
+        p, li { font-size: 15px; color: var(--text); margin-bottom: 12px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        .contact-card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255,255,255,0.06);
+            margin-top: 16px;
+        }
+        .contact-card a { color: var(--accent); text-decoration: none; }
+        .faq-item { margin-bottom: 20px; }
+        .faq-item strong { color: #fff; display: block; margin-bottom: 4px; }
+        .footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 48px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">&larr; Back</a>
+        <h1>Support</h1>
+        <p class="tagline">We're here to help you get the most out of BLE Insight.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <strong>Q: Why can't I see any devices?</strong>
+            <p>Make sure Bluetooth is enabled on your iPhone. The App requires Bluetooth permission to scan for nearby BLE devices. Check Settings &gt; Privacy &gt; Bluetooth.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Q: Why does the app ask for location permission?</strong>
+            <p>Location permission is required only for iBeacon scanning functionality. If you don't need iBeacon detection, you can deny this permission and all other features will work normally.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Q: My device disconnects immediately after connecting.</strong>
+            <p>Some BLE devices have short connection timeouts or require specific pairing procedures. Try moving closer to the device and ensure it's in a connectable state.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Q: The Graph tab shows no data.</strong>
+            <p>The Graph tab displays numeric data from characteristic reads and notifications. Make sure the characteristic you're reading contains numeric values (not text strings).</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Q: How do I export session data?</strong>
+            <p>Open a session from the History tab, then tap the Export button in the top-right corner. You can share the data as JSON via the iOS share sheet.</p>
+        </div>
+
+        <h2>Contact Us</h2>
+        <div class="contact-card">
+            <p>For bug reports, feature requests, or any other questions:</p>
+            <p><strong>Email:</strong> <a href="mailto:junnonaka@gmail.com">junnonaka@gmail.com</a></p>
+            <p>We typically respond within 48 hours.</p>
+        </div>
+
+        <h2>System Requirements</h2>
+        <ul>
+            <li>iOS 17.0 or later</li>
+            <li>iPhone with Bluetooth 4.0+ (BLE support)</li>
+        </ul>
+
+        <p class="footer">&copy; 2025 Jun Nonaka. All rights reserved.</p>
+    </div>
+</body>
+</html>

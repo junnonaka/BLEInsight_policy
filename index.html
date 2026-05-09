@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLE Insight</title>
+    <style>
+        :root {
+            --bg: #0f0f1a;
+            --card: #1a1a2e;
+            --accent: #007AFF;
+            --text: #e0e0e0;
+            --muted: #8888aa;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: 40px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .links a {
+            display: block;
+            padding: 20px 24px;
+            background: var(--card);
+            border-radius: 12px;
+            color: var(--text);
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.06);
+            transition: border-color 0.2s;
+        }
+        .links a:hover {
+            border-color: var(--accent);
+        }
+        .links a .label {
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .links a .desc {
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+        .footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 12px;
+            margin-top: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BLE Insight</h1>
+        <p class="subtitle">Bluetooth Low Energy Development Tool</p>
+        <div class="links">
+            <a href="privacy.html">
+                <div class="label">Privacy Policy</div>
+                <div class="desc">How we handle your data</div>
+            </a>
+            <a href="terms.html">
+                <div class="label">Terms of Use</div>
+                <div class="desc">Conditions for using the app</div>
+            </a>
+            <a href="support.html">
+                <div class="label">Support</div>
+                <div class="desc">Get help & contact us</div>
+            </a>
+        </div>
+        <p class="footer">&copy; 2025 Jun Nonaka. All rights reserved.</p>
+    </div>
+</body>
+</html>
